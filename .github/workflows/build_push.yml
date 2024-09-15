@@ -37,7 +37,6 @@ jobs:
         env:
           KO_DATA_PATH: kodata/
           KO_DOCKER_REPO: docker.io/utsab12312
-          KO_DEFAULTBASEIMAGE: docker.io/utsab12312/devops-project:v1
         run: |
           ko build --bare -t sha-${{ env.sha_short }}
           
