@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: utsab12312/ko_image:v1
+        image: docker.io/utsab12312/ko_image:sha-161f3cc
         imagePullPolicy: Always
         env:
         - name: DB_USERNAME
@@ -97,7 +97,7 @@ spec:
     tls:
       mode: Terminate
       certificateRefs:
-      - name: utsabapp-tls
+      - name: utsabargo-tls
         kind: Secret
         group: ""
   - name: argo-http
