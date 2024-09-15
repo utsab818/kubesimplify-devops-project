@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: docker.io/utsab12312/ko_image:sha-d2efa56
+        image: docker.io/utsab12312/ko_image:sha-1788b21
         imagePullPolicy: Always
         env:
         - name: DB_USERNAME
