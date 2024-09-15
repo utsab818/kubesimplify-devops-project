@@ -38,7 +38,7 @@ jobs:
           KO_DATA_PATH: kodata/
           KO_DOCKER_REPO: docker.io/utsab12312
         run: |
-          ko build --bare -t sha-${{ env.sha_short }}
+          ko build -t sha-${{ env.sha_short }}
           
       - name: Generate deploy manifest from Jinja template
         uses: cuchi/jinja2-action@v1.1.0
